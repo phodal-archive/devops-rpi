@@ -1,0 +1,3 @@
+---
+- name: 'Hello World'
+  shell: /bin/echo 'hello,world' > /home/pi/zero

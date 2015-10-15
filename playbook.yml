@@ -1,0 +1,9 @@
+---
+
+- name: Ansible Hello World for Raspberry Pi
+
+  hosts: webservers
+  roles:
+    - pi
+  remote_user: pi
+  sudo: yes
