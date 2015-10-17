@@ -2,8 +2,18 @@
 - name: Hello World
   shell: /bin/echo 'hello,world' > /home/pi/zero
 
+# Update Repos
 - name: Update APT package cache
   action: apt update_cache=yes
 
 - name: Install nginx
-  apt: name=nginx state=latest
+  apt: name=nginx state=present update_cache=yes
+
+- name: Install python-software-properties
+  apt: pkg=python-software-properties state=present update_cache=yes
+
+- name: Install elasticsearch
+  apt: pkg=elasticsearch state=present update_cache=yes
+
+- name: Install git
+  apt: pkg=git state=present update_cache=yes
