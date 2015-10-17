@@ -1,14 +1,14 @@
-# ansible-rpi
+# Learning & Create Raspberry Pi Cluster
 
-Run
+##Funs
+
+###Ansible
 
 ```
 ansible-playbook playbook.yml -i hosts --ask-pass
 ```
 
--- pi -> Hello,World
-
-fabric
+###Fabric
 
 ```
 fab -H 192.168.168.123,pi host_type -u pi
