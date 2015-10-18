@@ -6,9 +6,6 @@
 - name: Update APT package cache
   action: apt update_cache=yes
 
-- name: Install nginx
-  apt: name=nginx state=present update_cache=yes
-
 - name: Install python-software-properties
   apt: pkg=python-software-properties state=present update_cache=yes
 
